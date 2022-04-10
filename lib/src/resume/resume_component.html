@@ -1,0 +1,36 @@
+<h1>resume</h1>
+<h2>概要</h2>
+<div *ngFor="let overview of overviews">
+  <h3>{{ overview.title }}</h3>
+    <ul>
+      <li *ngFor="let desc of overview.description">
+        {{ desc }}
+      </li>
+    </ul>
+</div>
+<h2>スキル</h2>
+<div *ngFor="let skil of skils">
+  <h3>{{ skil.title }}</h3>
+  <ul>
+    <li *ngFor="let desc of skil.description">
+      {{ desc }}
+    </li>
+  </ul>
+</div>
+<h2>職務経歴</h2>
+<h3>Y株式会社（現職）</h3>
+<div *ngFor="let company of companies">
+  <h3>{{ company.title }}</h3>
+  <ul>
+    <li *ngFor="let desc of company.description">
+      {{ desc }}
+    </li>
+  </ul>
+</div>
+<h2>論文発表</h2>
+<ul>
+  <li *ngFor="let journal of journals">
+    {{ journal.title }}<br>
+    {{ journal.description.first }}
+  </li>
+</ul>

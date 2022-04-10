@@ -1,0 +1,35 @@
+@import 'package:ngcomponents/css/material/material';
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 5vw;
+}
+
+.full {
+    min-height: 100vh;
+    position: relative;
+}
+
+.dark-theme {
+    color: $mat-white;
+    background: $mat-grey-800;
+}
+
+header.material-header {
+    background: $mat-grey-800;
+}
+
+.material-header-row span.material-header-title {
+    left: 5vw;
+}
+
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer {
+    padding-left: 5vw;
+}
